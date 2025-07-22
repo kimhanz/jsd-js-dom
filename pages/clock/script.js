@@ -7,6 +7,10 @@ const ampmDisplay = document.getElementById("ampm");
 const dateDisplay = document.getElementById("dateDisplay");
 const dayDisplay = document.getElementById("dayDisplay");
 
+function padZero(num) {
+  return num < 10 ? "0" + num : num;
+}
+
 function updateClock() {
   const now = new Date();
 
@@ -30,3 +34,6 @@ function updateClock() {
   dateDisplay.textContent = `${month} ${date}, ${year}`;
   dayDisplay.textContent = day;
 }
+
+updateClock();
+setInterval(updateClock, 1000);
