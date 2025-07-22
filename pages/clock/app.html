@@ -1,9 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Clock</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <h1>Digital Clock</h1>
+    <div id="clockDisplay">
+      <span id="hours">00</span>
+      <span>:</span>
+      <span id="minutes">00</span>
+      <span>:</span>
+      <span id="seconds">00</span>
+      <span id="ampm">AM</span>
+    </div>
+    <div id="dateDisplay"></div>
+    <div id="dayDisplay"></div>
+    <script src="./script.js"></script>
   </body>
 </html>
